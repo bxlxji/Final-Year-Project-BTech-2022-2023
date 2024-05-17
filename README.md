@@ -385,7 +385,10 @@ and equipped with the trained model.
 
 ![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/eb5d36e5-0a65-48ee-8823-247f21bc837c)
 
-![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/f3fb29b1-d2bc-47b4-8095-5a11ef6c8240)
+
+<p align="center">
+  <img src="https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/f3fb29b1-d2bc-47b4-8095-5a11ef6c8240" alt="Balaji's custom image"/>
+</p>
 
 # What's the Conclusion to all this?
 
