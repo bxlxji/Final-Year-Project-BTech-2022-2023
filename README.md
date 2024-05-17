@@ -1,6 +1,6 @@
 # Leaf Identification Using Convolutional Neural Networks
 
-## Hey! I'm Balaji! (pronounced Baa Laa Jee)
+**Hey! I'm Balaji! (pronounced *Baa Laa Jee*)**
 
 I'm creating this page to highlight what I've learnt in my Final Year Project in my course "Computer Science Engineering" at "Jain University, Bangalore " in 2022-2023.
 
@@ -31,7 +31,8 @@ data is its distinguishing characteristic. Convolutional layers, which apply loc
 input data, are used to achieve this. The CNN is able to identify significant patterns and characteristics,
 including edges, textures, and forms, by applying filters to discrete areas of the input.
 Convolutional, pooling, and fully linked layers are among the layers that make up a standard CNN's
-architecture. Pooling layers down sample the derived features to minimize computational complexity
+architecture. 
+Pooling layers down sample the derived features to minimize computational complexity
 and enhance translation invariance after convolutional layers extract features from the input data. The
 classification or regression job is carried out by fully connected layers at the network's end using the
 learnt features.
@@ -57,37 +58,51 @@ computer vision tasks.
 
 Here are some important benefits of CNNs:
 
+
 • CNNs are capable of automatically learning and extracting useful characteristics from raw input
 data. CNNs may find and capture important patterns and structures in data by using convolutional
 layers and pooling layers. Because the network learns to extract important features on its own,
 this feature learning capacity eliminates the need for human feature engineering.
+
+
 • CNNs have translation invariance, which means they can recognize patterns and features
 regardless of where they are in an image. This trait is achieved by employing pooling layers,
 which down sample feature maps and capture the most important information. Translation
 invariance allows CNNs to recognize objects or features even when they are shifted or modified
 in the input data.
+
+
 • CNNs use parameter sharing to lower the number of parameters and enable the network to learn
 from fewer data samples. The same set of weights (filter/kernel) is applied across multiple spatial
 regions of the input data in a convolutional layer. This parameter sharing considerably decreases
 the network's memory footprint and facilitates quick training, especially when working with large
 datasets.
+
+
 • CNNs learn a hierarchical representation of the incoming data on their own. Deeper layers
 eventually acquire more abstract and high-level representations while the earliest layers capture
 low-level elements such as edges and textures. This hierarchical structure allows the network to
 comprehend complicated connections and meanings in the data, allowing it to recognize objects and 
 make fine-grained distinctions between various classes.
+
 Spatial Hierarchy Capture: CNNs excel at capturing spatial hierarchies inside pictures. Local
 receptive fields are processed by the convolutional layers, allowing the network to learn spatial
 correlations between neighbouring pixels or areas. Understanding the spatial hierarchy is critical
 for tasks like object identification, segmentation, and localization.
+
+
 • Beyond pictures: While CNNs are commonly utilized for image-related tasks, their use goes
 beyond pictures. CNN architectures have been successfully extended and used to additional data
 modalities including as text, time series, and audio. This flexibility demonstrates CNNs'
 adaptability and capability in gathering and extracting information from many forms of data.
+
+
 • Continuous Learning: CNNs may be trained incrementally or adaptively, letting them to learn
 from new data without forgetting what they learnt from previous data. CNNs can manage
 dynamic and developing datasets thanks to continuous learning techniques, making them suited
 for circumstances where the data distribution changes over time.
+
+
 • CNNs are resistant to changes in input data, such as changes in size, rotation, or occlusion. The
 hierarchical feature learning process, in which lower-level characteristics are merged to produce
 higher-level representations, achieves this resilience. As a result, CNNs can deal with fluctuations
@@ -113,11 +128,15 @@ project. They are intended to collect the required data and characteristics to t
 for a given job, such as image classification, object identification, or semantic
 segmentation. The dataset's scope is specified by the precise classes or categories of
 interest as well as the task's difficulty.
+
+
 • Data Collection: Depending on the nature of the project, custom datasets can be acquired
 in a variety of ways. Capturing photos or videos using cameras or sensors, obtaining text
 data from specified sources, or collecting data from specialized equipment or instruments
 are all examples of data collection. The gathering procedure may involve manual efforts
 like as annotation or labelling, or the use of automated tools.
+
+
 • Labelling and annotation: Annotation and labelling are frequently required for custom
 datasets, which entails manually or automatically giving class labels or annotations to the
 data. This stage is critical for supervised learning, which involves training CNNs using
@@ -125,16 +144,21 @@ labelled samples. Bounding boxes for object recognition, pixel-level masks for
 segmentation, and category labels for classification are examples of annotations. The
 annotation procedure guarantees that the CNN learns to link the appropriate labels with
 the appropriate data samples.
+
 The amount of a bespoke dataset might vary based on the project needs and the task's
 complexity. Custom datasets can range in size from a few hundred to a few thousand
 samples to big datasets containing millions of samples. The dataset size should be large
 enough to give adequate variety.
+
+
 • Data Stabilization: To achieve equal representation across multiple classes or categories,
 custom datasets may need careful analysis of class distribution. Imbalanced datasets, in
 which some classes contain disproportionately more samples than others, can bias CNN
 learning and lead to poor performance in underrepresented classes. To overcome class
 imbalance difficulties, balancing approaches such as oversampling, under sampling, or
 data augmentation may be used.
+
+
 • Data Preprocessing: Custom datasets are frequently subjected to preprocessing
 techniques in order to improve the data's quality and usefulness. Preprocessing may
 include picture scaling or cropping to a consistent size, normalizing pixel values to a given
