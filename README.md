@@ -1,19 +1,25 @@
 # Leaf Identification Using Convolutional Neural Networks
 
-Hey! I'm Balaji! (pronounced Baa Laa Jee)
+## Hey! I'm Balaji! (pronounced Baa Laa Jee)
+
 I'm creating this page to highlight what I've learnt in my Final Year Project in my course "Computer Science Engineering" at "Jain University, Bangalore " in 2022-2023.
+
 
 The primary goal of this project was towards modelling a system using deep learning techniques like convolutional neural networks and creating a dataset of our own requirements featuring "Local Indian plant leaves" .
 
+
 Even for the expert botanists, species identification is often a laborious task. Manual identification is often time-consuming and inefficient.
+
 
 For non-experts who lack botanical training and are unfamiliar with the terms used in the field, Identification of plants becomes difficult and tough even if professionals have the knowledge and expertise necessary to identify plant species. Recognizing this difficulty, scientists and researchers are investigating novel strategies to aid in species identification, including the use of deep learning methods like Convolutional Neural Networks (CNNs).
 By automatically recognizing complex patterns and characteristics from leaf photos, CNNs provide a potential method that enables automated and accurate species identification.
+
 
 We created this machine learning model in roughly 12 months. We also created the dataset by ourselves using images shot on smartphones. These images were then scaled down and processed to create the dataset to train the Machine Learning model in our project.
 
 
 # So what are Convolutional Neural Networks?
+
 A deep learning algorithm known as a convolutional neural network (CNN) was developed upfront for
 handling and analyzing visual input, such as pictures. It is a type of artificial neural network that takes
 its structure and operation ideas from the human brain. CNNs are quite effective in applications like
@@ -43,10 +49,14 @@ automatically learn and extract characteristics from pictures without the need f
 engineering. CNNs can learn to discriminate between diverse leaf traits and properly categorizes leaves
 into their respective plant species in the context of plant leaf species identification.
 
+
 # Why CNNs? What are its advantages?
 
 Convolutional Neural Networks (CNNs) have numerous benefits that make them ideal for a variety of
-computer vision tasks. Here are some important benefits of CNNs:
+computer vision tasks. 
+
+Here are some important benefits of CNNs:
+
 • CNNs are capable of automatically learning and extracting useful characteristics from raw input
 data. CNNs may find and capture important patterns and structures in data by using convolutional
 layers and pooling layers. Because the network learns to extract important features on its own,
@@ -84,6 +94,7 @@ higher-level representations, achieves this resilience. As a result, CNNs can de
 in object appearance, allowing them to be useful in real-world settings with diverse and difficult
 conditions.
 
+
 # What are our objectives?
 
 Custom datasets are essential for training CNNs for specific applications because they allow
@@ -94,6 +105,8 @@ training CNNs for specific applications because they allow researchers and pract
 to customize the data to their specific needs. They have control over the data quality,
 annotation procedure, and dataset size by developing their own datasets, enabling for
 more targeted and accurate training of CNN models.
+
+
 • In our model we are using custom dataset because of the following advantages:
 Custom datasets are designed to fulfil the particular requirements and objectives of a
 project. They are intended to collect the required data and characteristics to train a CNN
@@ -128,35 +141,41 @@ include picture scaling or cropping to a consistent size, normalizing pixel valu
 range, eliminating noise or artefacts, and dealing with missing or incorrect data. Data
 preparation ensures that the input data is in the correct format for the CNN and aids in its
 performance.
+
+
 Custom datasets are essential for training CNNs for specific applications because they allow
 researchers and practitioners to customize the data to their specific needs. They have control over
 the data quality, annotation procedure, and dataset size by developing their own datasets, enabling
 for more targeted and accurate training of CNN models.
 
+
 # What's our methodology?
 
 The project was managed through three sections of steps. These steps are 
-1)Dataset Creation
-2)Neural network modeling 
-3)Implementation & Testing
+### 1)Dataset Creation
+### 2)Neural network modeling 
+### 3)Implementation & Testing
 
 Each of these sections are a multi-step process. We will talk
 about each section of these steps in detail.
 
-# 1. Dataset
+
+## 1. Dataset
 This is the first section of the project dealing with generation of dataset and relevant research to be done.
 We have summarized all the steps into three important steps. They are Acquisition of Images for the
 Dataset, Applying Data augmentation techniques to generate more images, and finally processing the
 images into machine understandable data and encoding the data with respective classes.
 
-a. Image Acquisition:
+
+### a. Image Acquisition:
   • The process of capturing or getting leaf images that are utilized as input data for convolutional
   neural network (CNN) training and testing is known as image acquisition in leaf identification
   using CNN. To do this, high-quality leaf photos must be captured using a variety of tools,
   including digital cameras, scanners, and even mobile devices. After the obtained images have
   been preprocessed, the CNN model is used to further analyses and classify them.
+
   
-b. Data Augmentation:
+### b. Data Augmentation:
   • Data augmentation strategies can be used to expand the dataset and enhance the model's
   stability.
   • By using changes like rotation, zooming, scaling, and flipping, data augmentation creates
@@ -164,7 +183,8 @@ b. Data Augmentation:
 
   ![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/70c41164-7523-49eb-9472-9110a76d8bd2)
 
-c. Processing And Encoding
+
+### c. Processing And Encoding
   • Preprocessing: To improve the quality and consistency of the leaf images, different
   preprocessing techniques are utilized in this step. Resizing the pictures to a standard size,
   clipping the background out of the images that aren't relevant, and using filters to get removal
@@ -180,14 +200,16 @@ c. Processing And Encoding
   Usually, this entails translating the category labels into numerical forms. One-hot encoding
   is a popular encoding method where each label
 
-# 2. Convolutional Neural Network
+
+## 2. Convolutional Neural Network
 This section constitutes designing the model fit for the requirement and can be able to handle dataset.
 Involving three step process of Feature Extraction, Modeling the convolutional network and compiling
 and training the model.
 
 ![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/9a7004f2-7685-48a9-ba09-303fa161220a)
 
-a. Feature Extraction:
+
+### a. Feature Extraction:
   • In order to train the convolutional neural network (CNN) model for leaf identification,
   informative and discriminative features must be extracted from the leaf images. The model
   gains an understanding of the distinctive traits and patterns that set one leaf species apart from
@@ -196,15 +218,17 @@ a. Feature Extraction:
   visual properties by extracting information through the convolutional layers and learning
   discriminative representations through the fully connected layers.
   
-b. Layering (Modeling):
+  
+### b. Layering (Modeling):
   • During the modeling process, the number and size of the convolutional and pooling layers,
   as well as the number of fully connected layers, can be adjusted based on the complexity of
   the leaf identification task and the available computational resources. The CNN model is
   trained using labeled leaf images, and the weights and biases of the network are optimized to
   minimize the classification error. Once trained, the model can be used to classify new leaf
   images accurately.
+
   
-c. Compiling And Training The Model:
+### c. Compiling And Training The Model:
 Compiling and training the model involves configuring the model for training and fitting it to the
 labeled leaf images. Here's a concise summary:
   • Compilation: Configure the model with a loss function, optimizer, and evaluation metrics.
@@ -214,12 +238,14 @@ labeled leaf images. Here's a concise summary:
   to prevent overfitting.
   • Evaluation: Assess the trained model's performance on a separate testing dataset using
   relevant metrics.
+  
 By compiling and training the model, it learns to classify and identify leaf species based on the
 extracted features from the images.
 
-# 3. Testing And Implementation
 
-a. Testing The Model:
+## 3. Testing And Implementation
+
+### a. Testing The Model:
 To test the model for leaf identification using CNN, follow these steps:
   • Prepare a separate dataset of labeled leaf images that were not used during training or
   validation.
@@ -233,7 +259,8 @@ To test the model for leaf identification using CNN, follow these steps:
 By testing the model on unseen leaf images, you can evaluate its ability to generalize and make
 accurate predictions on new data.
 
-b. Reworking The Model:
+
+### b. Reworking The Model:
 To rework the model for leaf identification using CNN, consider the following steps:
   • Evaluate the current model's performance and identify areas for improvement, such as
   accuracy or robustness.
@@ -251,10 +278,12 @@ To rework the model for leaf identification using CNN, consider the following st
   configuration for your leaf identification task.
   • Regularly evaluate the reworked model's performance on validation and testing datasets to
   ensure progress and make adjustments as needed.
-  By reworking the model architecture and experimenting with different components and techniques,
-  you can enhance the model's performance in leaf identification using CNN.
   
-c. Implementing End User Interface:
+By reworking the model architecture and experimenting with different components and techniques,
+you can enhance the model's performance in leaf identification using CNN.
+
+  
+### c. Implementing End User Interface:
 To implement an end-user interface for leaf identification using CNN, follow these steps:
   • Design the User Interface (UI): Create an intuitive and user-friendly UI where users can
   interact with the leaf identification system. Consider including features like image upload,
@@ -266,6 +295,8 @@ To implement an end-user interface for leaf identification using CNN, follow the
 
 Model Inference: Pass the preprocessed leaf images through the trained CNN model to
 obtain predictions or probabilities for each leaf class.
+
+
   • Display Results: Present the results to the user, showing the predicted leaf species and any
   additional information you want to provide, such as confidence scores or top-k predictions.
   • Error Handling: Implement error handling mechanisms to handle cases where the uploaded
@@ -274,7 +305,98 @@ obtain predictions or probabilities for each leaf class.
   system's performance or allow users to report misclassifications.
   • Continuous Improvement: Regularly update and improve the model based on user feedback
   and additional training data to enhance the system's accuracy and usability.
+  
 By implementing an end-user interface, users can easily interact with the leaf identification system,
 upload images for classification, and view the results, providing a user-friendly experience for
 identifying leaf species using CNN.
 
+# Here's some System Design for you Tech folks!
+
+
+## What is System Design?
+
+
+System design involves system architecture and working of the modules. The functioning of the system
+is explained using UML diagrams.
+
+![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/e3b11cab-5bf4-4888-8606-a9164a245c7b)
+
+The image of the leaf is sent as input for the model which then returns the prediction i.e., class label for
+the leaf. The result is displayed to the user.
+
+###  Use case Diagram
+
+![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/78ae2b29-06aa-406b-a62d-75302031d814)
+
+The user interacts with the model by uploading the image of the leaf. After getting the predictions the
+result prediction is shown to the user.
+
+###  Data Flow Diagram
+
+![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/9ff276da-4531-4d12-be9b-ef0a1ac6fb08)
+
+Data flow of our methodology as follows: For Leaf dataset, Data augmentation is applied to generate
+more augmented images to tackle insufficiency and also possibility of overfitting. All the images are
+processed. Processing includes converting them into machine understandable two-dimensional arrays
+and encoding them with their class labels. Processed data is now split into training and testing data.
+Training data is fed into a model for training. Trained model takes user input image and classifies the
+images. Result is issued to the user.
+
+###   Sequence Diagram
+
+![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/8be2b668-8a9d-4e63-aa29-a96b49ea3132)
+
+When the user opens the application, the user uploads an image. Our CNN model in the backend will
+perform feature extraction and identify the leaf. Result is displayed to the user along with data about the
+leaf.
+
+# What was the Result we arrived at?
+
+After training the model for 25 epochs, model was able to reach a training accuracy of 98.29%.
+In evaluation, remaining 20% of dataset which was set aside during split was used to produce
+predictions. These predictions were evaluated for their trueness and later calculated to be
+accuracy. Accuracy of this model for testing was 90.48%. Results produced are on positive side.
+There are things to be discussed and reminded while concluding. User interface was developed
+and equipped with the trained model.
+
+![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/eb5d36e5-0a65-48ee-8823-247f21bc837c)
+
+![image](https://github.com/bxlxji/Final-Year-Project-BTech-2022-2023/assets/79824566/f3fb29b1-d2bc-47b4-8095-5a11ef6c8240)
+
+# What's the Conclusion to all this?
+
+The project commenced considering the issues involved in Identification of Leaves and Flowers among
+Botanists and researchers. We demonstrate cutting-edge algorithms such as Convolutional Neural
+Networks and how it can be used in the field of Botany to train neural networks with data that researchers
+do not have access to. What we displayed in the project works as a prototype for a larger system. This
+technology can be used and scaled at levels which can reform how Botanical approach problems and
+collaborate with other researchers on how to identify images for Classification.
+
+
+In conclusion, this project aimed to complete the mentioned objectives for our problem to help an end
+user to identify plant leaves without any over complication. Dataset for this cause was created, started as
+a minimal dataset later on expanded further to help the model to train better, to reach better results. Image
+acquisition for leaves dataset was done in a random manner to get different cases of leaf images in
+different settings and environments. The reason for choosing CNN for developing the model is how
+feasible feature extraction from images can become because of the concept called Convolution.
+
+
+Throughout the course of the project, training was made in an experimental manner. Testing evaluated
+our models and then the rework was done to models and datasets accordingly. This back-and-forth
+process was put to a halt when a decently accurate model was able to be produced. Then the project
+moved on the user end. User interface is the face of the efforts done in the previous stages and it should
+align with the user's understanding. Over complication can be a possibility which can over do things and
+not so well adjusted for the user. 
+
+
+This project focuses on a simple user interface in the use case that the
+user will upload the image of the leaf to know the identification. For the future, there are a lot of ways
+to improve these projects, perhaps improving image acquisition for dataset creation can be improved
+with more structure. With models, there are a lot of changes happening around the communities of Deep
+Learning and Image Processing. 
+
+
+So, improvement is always an open opportunity as newer techniques
+can prove to be better. For the interface, in future an user feedback system can be explored. This user
+interface can be made not only for a single platform. It can be reproduced in different platforms as the
+model is consistent across.
